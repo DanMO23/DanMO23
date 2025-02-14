@@ -47,11 +47,14 @@
   <a href="https://www.linkedin.com/in/danilo-matos-de-oliveira-4a0070208/">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo" />
   </a>
+  <a href="mailto:danilo.matos.oliveira23@gmail.com">
+  <img align="left" src="https://img.shields.io/static/v1?message=Email&logo=gmail&label=&color=4285F4&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="email logo" />
+</a>
 </div>
 
 ###
 
-📧 [Contact me via email](mailto:danilo.matos.oliveira23@gmail.com)
+
 
 <br clear="both">
 
