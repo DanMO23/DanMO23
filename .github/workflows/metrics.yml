@@ -2,9 +2,8 @@ name: Metrics
 on:
   # Roda todos os dias à meia-noite
   schedule: [{cron: "0 0 * * *"}]
-  # Permite rodar manualmente na aba "Actions"
+  # Permite rodar manualmente
   workflow_dispatch:
-  # Roda quando fazes push no main/master
   push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
@@ -14,26 +13,38 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # O token que criaste
           token: ${{ secrets.METRICS_TOKEN }}
 
-          # Opções para a v360 (Profissional & Dark Mode)
+          # --- CONFIGURAÇÃO VISUAL ---
           user: DanMO23
           template: classic
-          base: header, activity, community, repositories, metadata
           config_timezone: America/Sao_Paulo
-          
-          # Tema Dracula (combina com dev moderno)
           theme: dracula
           
-          # Plugin de Linguagens (Mostra tua stack Full Stack)
-          plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css
-          plugin_languages_details: bytes-size, percentage
+          # --- O QUE MOSTRAR ---
+          # "header": Mostra teu Avatar + Total de Commits + PRs
+          # "repositories": Mostra estrelas e licenças
+          base: header, repositories
           
-          # Plugin de Linhas de Código (Mostra volume de trabalho)
+          # --- PLUGIN: LINHAS DE CÓDIGO ---
           plugin_lines: yes
           
-          # Nome do arquivo que será gerado
+          # --- PLUGIN: LINGUAGENS (O GRÁFICO BONITO) ---
+          plugin_languages: yes
+          # Mostra até 8 linguagens
+          plugin_languages_limit: 8
+          # Detalhes: mostra bytes e porcentagem
+          plugin_languages_details: bytes-size, percentage
+          # Indepth: Melhora a precisão dos dados
+          plugin_languages_indepth: yes
+          # Cores oficiais do GitHub
+          plugin_languages_colors: "github"
+          
+          # AQUI ESTÁ A MUDANÇA:
+          # Removi HTML, Blade e Jupyter da lista de ignorados.
+          # Agora eles vão aparecer no gráfico!
+          plugin_languages_ignored: >-
+            css, scss, assembly
+            
+          # Nome do arquivo final
           filename: github-metrics.svg
