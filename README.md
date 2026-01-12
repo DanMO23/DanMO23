@@ -45,19 +45,10 @@ Currently, I act as a **Tech Lead & Product Owner**, bridging the gap between en
 
 ### 📊 Engineering Metrics
 
-<div align="center">
-  <a href="https://github.com/DanMO23">
-    <img height="160em" src="https://github-readme-stats.vercel.app/api?username=DanMO23&show_icons=true&theme=dracula&include_all_commits=true&hide_border=true"/>
-  </a>
-  
-  <a href="https://github.com/DanMO23">
-    <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DanMO23&layout=compact&langs_count=8&theme=dracula&hide_border=true"/>
-  </a>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DanMO23&theme=dracula&hide_border=true" alt="DanMO23" />
-</div>
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=DanMO23&show_icons=true&theme=dracula&hide_border=true" alt="DanMO23 Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DanMO23&layout=compact&theme=dracula&hide_border=true" alt="DanMO23 Langs" />
+</p>
 
 <br/>
 
