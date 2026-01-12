@@ -1,8 +1,6 @@
 name: Metrics
 on:
-  # Roda todos os dias à meia-noite
   schedule: [{cron: "0 0 * * *"}]
-  # Permite rodar manualmente
   workflow_dispatch:
   push: {branches: ["master", "main"]}
 jobs:
@@ -21,30 +19,30 @@ jobs:
           config_timezone: America/Sao_Paulo
           theme: dracula
           
-          # --- O QUE MOSTRAR ---
-          # "header": Mostra teu Avatar + Total de Commits + PRs
-          # "repositories": Mostra estrelas e licenças
-          base: header, repositories
+          # --- LIMPEZA DO HEADER E BASE ---
+          # 'header' mantém seu Nome e Avatar.
+          # Removi 'repositories' para sumir com o bloco de "No license, Packages, MB used".
+          base: header
           
           # --- PLUGIN: LINHAS DE CÓDIGO ---
           plugin_lines: yes
           
-          # --- PLUGIN: LINGUAGENS (O GRÁFICO BONITO) ---
+          # --- PLUGIN: LINGUAGENS (JS EM 1º) ---
           plugin_languages: yes
-          # Mostra até 8 linguagens
+          # Mostra apenas a barra de progresso (most-used)
+          plugin_languages_sections: most-used
+          # Remove o subtítulo de estimativa complexa
+          plugin_languages_indepth: no
+          # Mostra apenas a porcentagem (limpo)
+          plugin_languages_details: percentage
+          # Limite de linguagens
           plugin_languages_limit: 8
-          # Detalhes: mostra bytes e porcentagem
-          plugin_languages_details: bytes-size, percentage
-          # Indepth: Melhora a precisão dos dados
-          plugin_languages_indepth: yes
-          # Cores oficiais do GitHub
-          plugin_languages_colors: "github"
           
-          # AQUI ESTÁ A MUDANÇA:
-          # Removi HTML, Blade e Jupyter da lista de ignorados.
-          # Agora eles vão aparecer no gráfico!
+          # O TRUQUE DO JS:
+          # Ignoramos 'jupyter notebook' (que é pesado) e 'smartle' (artefatos).
+          # Isso fará o JavaScript subir para o topo naturalmente.
           plugin_languages_ignored: >-
-            css, scss, assembly
+            jupyter notebook, css, scss, assembly, html, dockerfile, makefile, shell
             
           # Nome do arquivo final
           filename: github-metrics.svg
