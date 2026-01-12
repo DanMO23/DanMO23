@@ -1,6 +1,6 @@
 <div align="center">
   <h1 align="center">Danilo Matos de Oliveira</h1>
-  <h3 align="center">Software Engineer | Full Stack & Automation Specialist | Founder @ Dynamic Tech</h3>
+  <h3 align="center">Software Engineer | Full Stack & Automation Specialist </h3>
 </div>
 
 <div align="center">
@@ -19,7 +19,7 @@
 
 ### 👨‍💻 About Me
 
-I am a **Computer Science Bachelor (UFV)** and the Founder of **Dynamic Tech Soluções**. My focus is not just writing code, but building software that solves real business problems and generates revenue. I specialize in **Automation**, **Fintech Solutions**, and **Scalable Architectures**.
+I am a **Computer Science Bachelor (UFV)**, my focus is not just writing code, but building software that solves real business problems and generates revenue. I specialize in **Automation**, **Fintech Solutions**, and **Scalable Architectures**.
 
 Currently, I act as a **Tech Lead & Product Owner**, bridging the gap between engineering complexity and business efficiency.
 
