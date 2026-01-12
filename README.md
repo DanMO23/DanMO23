@@ -25,7 +25,7 @@ Currently, I act as a **Tech Lead & Product Owner**, bridging the gap between en
 
 * 🔭 I’m currently working on: **ERP Systems for Fitness Industry** & **Financial Automations**.
 * 🌱 I’m currently deepening my knowledge in: **Ruby on Rails**, **Clean Architecture** and **Microservices**.
-* ⚡ **Ownership Mindset:** I build projects as if I were the investor.
+
 
 <br/>
 
@@ -43,12 +43,11 @@ Currently, I act as a **Tech Lead & Product Owner**, bridging the gap between en
 
 <br/>
 
-### 📊 Engineering Metrics
+### 🏆 Achievements
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=DanMO23&show_icons=true&theme=dracula&hide_border=true" alt="DanMO23 Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DanMO23&layout=compact&theme=dracula&hide_border=true" alt="DanMO23 Langs" />
-</p>
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=DanMO23&theme=dracula&no-frame=true&column=4&margin-w=15&margin-h=15" />
+</div>
 
 <br/>
 
