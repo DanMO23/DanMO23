@@ -43,10 +43,10 @@ Currently, I act as a **Tech Lead & Product Owner**, bridging the gap between en
 
 <br/>
 
-### 🏆 Achievements
+### 📊 Engineering Metrics
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=DanMO23&theme=dracula&no-frame=true&column=4&margin-w=15&margin-h=15" />
+  <img src="https://github.com/DanMO23/DanMO23/blob/main/github-metrics.svg" alt="Metrics" width="100%">
 </div>
 
 <br/>
